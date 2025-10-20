@@ -4,8 +4,8 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-// Tarjetas de Películas
-.movie-card {
+// Tarjetas de Películas (uso de interpolación en selector)
+.#{$component-prefix}-#{$component-suffix} {
 	cursor: pointer;
 	@include transition($transition-transform, $transition-shadow);
 	margin-bottom: $spacing-xl;

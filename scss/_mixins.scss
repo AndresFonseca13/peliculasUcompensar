@@ -32,6 +32,7 @@
 @mixin text-truncate($lines: 2) {
 	display: -webkit-box;
 	-webkit-line-clamp: $lines;
+	line-clamp: $lines;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
