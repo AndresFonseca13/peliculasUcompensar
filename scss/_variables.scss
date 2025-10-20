@@ -1,0 +1,71 @@
+// Variables Sass para el proyecto CineReview - Regenerando CSS
+
+// Colores principales
+$primary-color: #dc3545;
+$secondary-color: #2795f5;
+$dark-color: #333;
+$light-color: #f8f9fa;
+$gray-color: #6c757d;
+$white-color: #ffffff;
+
+// Colores de texto
+$text-primary: #333;
+$text-secondary: #666;
+$text-muted: #6c757d;
+
+// Colores de fondo
+$bg-primary: #f8f9fa;
+$bg-card: #ffffff;
+
+// Gradientes
+$hero-gradient: linear-gradient(135deg, #dc3545 0%, #2795f5 100%);
+$backdrop-gradient: linear-gradient(
+	to bottom,
+	rgba(0, 0, 0, 0.3) 0%,
+	rgba(248, 249, 250, 1) 100%
+);
+
+// Tipografía
+$font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$font-size-base: 1rem;
+$font-size-sm: 0.9rem;
+$font-size-lg: 1.1rem;
+$font-size-xl: 1.2rem;
+
+// Espaciado
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+$spacing-xxl: 50px;
+
+// Bordes
+$border-radius: 10px;
+$border-radius-sm: 5px;
+$border-radius-lg: 20px;
+
+// Sombras
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+// Transiciones
+$transition-base: all 0.3s ease;
+$transition-transform: transform 0.3s ease;
+$transition-shadow: box-shadow 0.3s ease;
+
+// Breakpoints
+$breakpoint-mobile: 575px;
+$breakpoint-tablet: 767px;
+$breakpoint-desktop: 768px;
+
+// Alturas específicas
+$movie-card-img-height: 400px;
+$movie-card-img-height-mobile: 300px;
+$movie-card-img-height-tablet: 350px;
+$backdrop-height: 400px;
+$backdrop-height-mobile: 250px;
+$backdrop-height-tablet: 300px;
+$cast-img-height: 200px;
+$cast-img-height-mobile: 150px;
+$gallery-img-height: 200px;

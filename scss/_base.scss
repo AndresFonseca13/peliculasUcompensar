@@ -1,0 +1,47 @@
+// Estilos base del proyecto
+
+// Importar variables y mixins
+@use "variables" as *;
+@use "mixins" as *;
+
+// Estilos Generales
+body {
+	font-family: $font-family;
+	background-color: $bg-primary;
+}
+
+// Hero Section
+.hero-section {
+	@include gradient-bg($hero-gradient);
+	padding: 80px 0;
+	margin-bottom: $spacing-xl;
+
+	@include mobile {
+		padding: $spacing-xxl 0;
+
+		h1 {
+			font-size: 2rem;
+		}
+	}
+}
+
+// Navbar personalizado
+.navbar-brand {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+// Botones
+.btn-danger {
+	@include custom-button($primary-color, #c82333);
+}
+
+// Footer
+footer {
+	margin-top: auto;
+}
+
+// Loading Spinner
+#loadingSpinner {
+	padding: 40px 0;
+}

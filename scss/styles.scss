@@ -1,0 +1,21 @@
+// Archivo principal de Sass para CineReview
+// Este archivo importa todos los módulos Sass organizados
+
+// 1. Variables y configuración base
+@use "variables" as *;
+@use "mixins" as *;
+
+// 2. Estilos base y generales
+@use "base";
+
+// 3. Componentes específicos
+@use "movie-cards";
+@use "movie-detail";
+@use "reviews";
+
+// 4. Animaciones y utilidades
+@use "animations";
+
+// 5. Media queries organizadas (ya incluidas en cada componente)
+// Las media queries están distribuidas en cada archivo usando los mixins
+// @include mobile, @include tablet, @include desktop

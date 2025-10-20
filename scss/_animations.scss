@@ -1,0 +1,30 @@
+// Animaciones y utilidades
+
+// Importar dependencias
+@use "variables" as *;
+@use "mixins" as *;
+
+// Animaciones
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade-in {
+	@include fade-in-animation(0.5s);
+}
+
+// Utilidades adicionales
+.text-truncate-2 {
+	@include text-truncate(2);
+}
+
+.text-truncate-3 {
+	@include text-truncate(3);
+}

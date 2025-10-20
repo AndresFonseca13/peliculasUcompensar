@@ -1,0 +1,44 @@
+// Estilos para reseñas y comentarios
+
+// Importar dependencias
+@use "variables" as *;
+@use "mixins" as *;
+
+// Reseñas
+.review-card {
+	background: $bg-card;
+	border-radius: $border-radius;
+	padding: $spacing-lg;
+	margin-bottom: $spacing-lg;
+	@include card-shadow($shadow-sm);
+}
+
+.review-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: $spacing-md;
+	flex-wrap: wrap;
+}
+
+.review-author {
+	font-weight: bold;
+	color: $text-primary;
+	font-size: $font-size-lg;
+}
+
+.review-rating {
+	color: #ffc107;
+	font-size: $font-size-xl;
+}
+
+.review-text {
+	color: $text-secondary;
+	line-height: 1.6;
+}
+
+.review-date {
+	color: $text-muted;
+	font-size: 0.85rem;
+	margin-top: $spacing-sm;
+}

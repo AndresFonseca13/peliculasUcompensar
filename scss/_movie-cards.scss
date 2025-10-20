@@ -1,0 +1,71 @@
+// Estilos para tarjetas de películas
+
+// Importar dependencias
+@use "variables" as *;
+@use "mixins" as *;
+
+// Tarjetas de Películas
+.movie-card {
+	cursor: pointer;
+	@include transition($transition-transform, $transition-shadow);
+	margin-bottom: $spacing-xl;
+	border: none;
+	border-radius: $border-radius;
+	overflow: hidden;
+	background: $bg-card;
+	@include card-shadow($shadow-sm, $shadow-md);
+
+	&:hover {
+		@include hover-transform(-10px);
+	}
+
+	img {
+		@include responsive-image($movie-card-img-height);
+
+		@include mobile {
+			height: $movie-card-img-height-mobile;
+		}
+
+		@include tablet {
+			height: $movie-card-img-height-tablet;
+		}
+
+		@include desktop {
+			height: $movie-card-img-height;
+		}
+	}
+}
+
+.movie-card-body {
+	padding: $spacing-md;
+}
+
+.movie-title {
+	font-size: $font-size-lg;
+	font-weight: bold;
+	margin-bottom: $spacing-xs;
+	color: $text-primary;
+	@include text-truncate(2);
+}
+
+.movie-rating {
+	display: inline-block;
+	background-color: $primary-color;
+	color: $white-color;
+	padding: 3px 8px;
+	border-radius: $border-radius-sm;
+	font-size: $font-size-sm;
+	font-weight: bold;
+}
+
+.movie-date {
+	color: $text-muted;
+	font-size: $font-size-sm;
+}
+
+.movie-overview {
+	color: $text-secondary;
+	font-size: $font-size-sm;
+	margin-top: $spacing-sm;
+	@include text-truncate(3);
+}
