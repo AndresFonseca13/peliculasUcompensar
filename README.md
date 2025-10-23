@@ -40,7 +40,7 @@ npm run sass:build
 
 El HTML sigue referenciando `css/styles.css`. Ese archivo ahora se **genera automáticamente** desde Sass.
 
-### Estructura breve
+### Estructura
 
 ```
 scss/
